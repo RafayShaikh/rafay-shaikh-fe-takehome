@@ -21,6 +21,7 @@ const WelcomeSection = styled.div`
   width: 20em;
   height: auto;
   display: flex;
+  background-color: white;
   justify-content: center;
   align-items: center;
   flex-direction: column;

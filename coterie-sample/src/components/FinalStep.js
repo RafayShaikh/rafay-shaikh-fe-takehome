@@ -23,14 +23,13 @@ const FinalStep = () => {
    gets back a response to decide what insurance policies
    are available*/
   const submitData = () => {
-    const token = '73920c6f-d530-419c-87b3-4f4762e05e9d'; //given token
-
+    console.log(process.env.REACT_APP_TOKEN);
     fetch(
       'https://api-sandbox.coterieinsurance.com/v1/commercial/applications',
       {
         method: 'POST',
         headers: {
-          Authorization: `token ${token}`,
+          Authorization: `token ${process.env.REACT_APP_TOKEN}`, //Given token coming from env file
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
