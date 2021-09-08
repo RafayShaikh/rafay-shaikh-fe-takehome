@@ -23,7 +23,6 @@ const FinalStep = () => {
    gets back a response to decide what insurance policies
    are available*/
   const submitData = () => {
-    console.log(process.env.REACT_APP_TOKEN);
     fetch(
       'https://api-sandbox.coterieinsurance.com/v1/commercial/applications',
       {
