@@ -1,5 +1,13 @@
 import styled, { keyframes } from 'styled-components';
 
+/**
+ * This includes most of the styles this app is using
+ * Some of the styles are inline or in the components
+ * to show the variety of mehtonds to apply styled
+ * components
+ */
+
+//Simple Animation Keyframe
 export const SlideUp = keyframes`
   from {
    opacity: 0;

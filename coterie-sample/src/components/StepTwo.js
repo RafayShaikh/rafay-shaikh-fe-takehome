@@ -6,6 +6,7 @@ import {
   loadDisableNext,
   loadZipcode,
   selectFormObject,
+  selectZipcode,
 } from '../slice/formSlice';
 import {
   StyledForm,
@@ -18,6 +19,7 @@ import {
 /*Some of the documentation can be found in StepOne component*/
 const StepTwo = () => {
   const formObject = useSelector(selectFormObject);
+  const zip = useSelector(selectZipcode);
   const dispatch = useDispatch();
   const [email, setEmail] = useState('');
   const [zipcode, setZipcode] = useState('');
@@ -67,6 +69,7 @@ const StepTwo = () => {
   };
   useEffect(() => {
     setEmail(formObject.contactEmail);
+    setZipcode(zip);
   }, []);
   useEffect(() => {
     checkForButtons();
