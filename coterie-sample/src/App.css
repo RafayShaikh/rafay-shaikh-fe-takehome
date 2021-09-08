@@ -1,0 +1,9 @@
+/*#4223ff - light blue
+rgb(13, 13, 70) - darkblue
+rgb(64, 255, 177) - sky blue*/
+
+.App {
+  display: flex;
+  justify-content: center;
+  background-image: url('./bg.jpg');
+}
